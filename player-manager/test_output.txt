@@ -1,0 +1,635 @@
+warning: unused import: `event::*`
+   --> src\entities\mod.rs:665:9
+    |
+665 | pub use event::*;
+    |         ^^^^^^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused imports: `Deserialize` and `Serialize`
+ --> src\systems\development_system.rs:1:13
+  |
+1 | use serde::{Deserialize, Serialize};
+  |             ^^^^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\systems\development_system.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `MentalAttribute`, `MentalAttributes`, `PhysicalAttribute`, `PhysicalAttributes`, `TechnicalAttribute`, and `TechnicalAttributes`
+ --> src\systems\development_system.rs:5:13
+  |
+5 |     Player, TechnicalAttributes, PhysicalAttributes, MentalAttributes, 
+  |             ^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^
+6 |     TechnicalAttribute, PhysicalAttribute, MentalAttribute, HiddenAttributes
+  |     ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\systems\morale_system.rs:2:5
+  |
+2 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Formation` and `PlayerInMatch`
+ --> src\systems\match_system.rs:8:16
+  |
+8 |     MatchHalf, PlayerInMatch, PlayerMatchStats, MatchLineup, Formation
+  |                ^^^^^^^^^^^^^                                 ^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\systems\reputation_system.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `uuid::Uuid`
+ --> src\systems\reputation_system.rs:4:5
+  |
+4 | use uuid::Uuid;
+  |     ^^^^^^^^^^
+
+warning: unused import: `crate::entities::Player`
+ --> src\systems\social_system.rs:6:5
+  |
+6 | use crate::entities::Player;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\systems\training_system.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `uuid::Uuid`
+ --> src\systems\training_system.rs:4:5
+  |
+4 | use uuid::Uuid;
+  |     ^^^^^^^^^^
+
+warning: unused imports: `MentalAttributes`, `PhysicalAttributes`, and `TechnicalAttributes`
+ --> src\systems\training_system.rs:6:31
+  |
+6 | use crate::entities::{Player, TechnicalAttributes, PhysicalAttributes, MentalAttributes};
+  |                               ^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\systems\competition_system.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\systems\transfer_system.rs:3:5
+  |
+3 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `SquadRole`
+ --> src\systems\transfer_system.rs:7:47
+  |
+7 | use crate::entities::{Player, Team, Contract, SquadRole};
+  |                                               ^^^^^^^^^
+
+warning: unused import: `SquadRole`
+ --> src\ui\console_ui.rs:6:57
+  |
+6 | use crate::entities::{Player, Team, Match, Competition, SquadRole};
+  |                                                         ^^^^^^^^^
+
+warning: unused import: `ScheduledEventType`
+ --> src\ui\console_ui.rs:7:44
+  |
+7 | use crate::core::time_engine::{TimeEngine, ScheduledEventType};
+  |                                            ^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DecisionOption` and `DecisionType`
+ --> src\ui\console_ui.rs:8:67
+  |
+8 | use crate::core::event_engine::{EventEngine, UserDecisionRequest, DecisionType, DecisionOption};
+  |                                                                   ^^^^^^^^^^^^  ^^^^^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\save\save_manager.rs:5:5
+  |
+5 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `uuid::Uuid`
+ --> src\save\save_manager.rs:6:5
+  |
+6 | use uuid::Uuid;
+  |     ^^^^^^^^^^
+
+warning: unused imports: `Competition`, `Match`, `Player`, and `Team`
+ --> src\save\save_manager.rs:8:23
+  |
+8 | use crate::entities::{Player, Team, Competition, Match};
+  |                       ^^^^^^  ^^^^  ^^^^^^^^^^^  ^^^^^
+
+warning: use of deprecated associated function `chrono::Utc::today`: use `Utc::now()` instead, potentially with `.date_naive()`
+   --> src\systems\transfer_system.rs:340:34
+    |
+340 |         let today = chrono::Utc::today().naive_utc();
+    |                                  ^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: unused variable: `time_to_advance`
+   --> src\core\time_engine.rs:114:17
+    |
+114 |             let time_to_advance = next_event.scheduled_time - self.current_date;
+    |                 ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_time_to_advance`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `fatigue_penalty`
+   --> src\systems\development_system.rs:343:13
+    |
+343 |         let fatigue_penalty = player.fatigue / 100.0 * 0.15; // Up to 15% penalty
+    |             ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_fatigue_penalty`
+
+warning: unused variable: `entity_id`
+  --> src\systems\morale_system.rs:53:14
+   |
+53 |         for (entity_id, change) in relationship_changes {
+   |              ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_entity_id`
+
+warning: unused variable: `intensity`
+   --> src\systems\morale_system.rs:305:9
+    |
+305 |         intensity: f32,  // How intense the situation is (0.0 to 1.0)
+    |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_intensity`
+
+warning: unused variable: `minute`
+   --> src\systems\match_system.rs:124:95
+    |
+124 |     fn select_player_for_defensive_action(&mut self, match_state: &MatchState, team_id: Uuid, minute: u8) -> Uuid {
+    |                                                                                               ^^^^^^ help: if this is intentional, prefix it with an underscore: `_minute`
+
+warning: unused variable: `minute`
+   --> src\systems\match_system.rs:143:68
+    |
+143 |     fn calculate_player_involvement_weight(&self, player: &Player, minute: u8) -> f32 {
+    |                                                                    ^^^^^^ help: if this is intentional, prefix it with an underscore: `_minute`
+
+warning: unused variable: `match_state`
+   --> src\systems\match_system.rs:334:55
+    |
+334 |     fn decide_action_type(&mut self, player: &Player, match_state: &MatchState, minute: u8) -> EventType {
+    |                                                       ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_match_state`
+
+warning: unused variable: `minute`
+   --> src\systems\match_system.rs:334:81
+    |
+334 |     fn decide_action_type(&mut self, player: &Player, match_state: &MatchState, minute: u8) -> EventType {
+    |                                                                                 ^^^^^^ help: if this is intentional, prefix it with an underscore: `_minute`
+
+warning: unused variable: `player`
+   --> src\systems\match_system.rs:691:47
+    |
+691 |     fn calculate_difficulty_multiplier(&self, player: &Player, match_state: &MatchState) -> f32 {
+    |                                               ^^^^^^ help: if this is intentional, prefix it with an underscore: `_player`
+
+warning: unused variable: `match_state`
+   --> src\systems\match_system.rs:755:70
+    |
+755 |     fn calculate_single_player_rating(&self, events: &[&MatchEvent], match_state: &MatchState) -> f32 {
+    |                                                                      ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_match_state`
+
+warning: unused variable: `count`
+   --> src\systems\match_system.rs:820:26
+    |
+820 |         for (event_type, count) in event_counts {
+    |                          ^^^^^ help: if this is intentional, prefix it with an underscore: `_count`
+
+warning: unused variable: `match_state`
+   --> src\systems\match_system.rs:845:65
+    |
+845 |     fn update_player_match_stats(&self, game_match: &mut Match, match_state: &MatchState) {
+    |                                                                 ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_match_state`
+
+warning: unused variable: `home_lineup`
+   --> src\systems\match_system.rs:940:9
+    |
+940 |         home_lineup: &MatchLineup,
+    |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_home_lineup`
+
+warning: unused variable: `away_lineup`
+   --> src\systems\match_system.rs:941:9
+    |
+941 |         away_lineup: &MatchLineup,
+    |         ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_away_lineup`
+
+warning: unused variable: `player_id`
+  --> src\systems\social_system.rs:97:9
+   |
+97 |         player_id: Uuid,
+   |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_player_id`
+
+warning: unused variable: `competition_name`
+  --> src\systems\competition_system.rs:46:71
+   |
+46 |     fn generate_fixtures(&self, teams: &[Uuid], competition_id: Uuid, competition_name: &str) -> Vec<Fixture> {
+   |                                                                       ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_competition_name`
+
+warning: unused variable: `is_home`
+   --> src\systems\competition_system.rs:117:9
+    |
+117 |         is_home: bool,
+    |         ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_is_home`
+
+warning: unused variable: `team`
+   --> src\systems\transfer_system.rs:111:78
+    |
+111 |     fn calculate_positional_need(&self, position: crate::entities::Position, team: &Team) -> f32 {
+    |                                                                              ^^^^ help: if this is intentional, prefix it with an underscore: `_team`
+
+warning: unused variable: `current_contract`
+   --> src\systems\transfer_system.rs:182:79
+    |
+182 |     fn calculate_transfer_fee(&self, player: &Player, interested_club: &Team, current_contract: &Contract) -> Option<f32> {
+    |                                                                               ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_current_contract`
+
+warning: unused variable: `player`
+   --> src\systems\transfer_system.rs:305:9
+    |
+305 |         player: &Player,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_player`
+
+warning: unused variable: `offer`
+   --> src\systems\transfer_system.rs:332:43
+    |
+332 |     fn club_acceptance_probability(&self, offer: &TransferOffer) -> f32 {
+    |                                           ^^^^^ help: if this is intentional, prefix it with an underscore: `_offer`
+
+warning: unused variable: `competitions`
+  --> src\ui\console_ui.rs:30:79
+   |
+30 |     pub fn run_main_loop(&mut self, mut player: Player, all_teams: Vec<Team>, competitions: Vec<Competition>) {
+   |                                                                               ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_competitions`
+
+warning: unused variable: `player`
+   --> src\ui\console_ui.rs:158:51
+    |
+158 |     fn handle_training_focus_selection(&mut self, player: &mut Player, decision: &UserDecisionRequest) {
+    |                                                   ^^^^^^ help: if this is intentional, prefix it with an underscore: `_player`
+
+warning: unused variable: `attr_type`
+   --> src\ui\console_ui.rs:399:51
+    |
+399 |             ConsequenceType::AttributeImprovement(ref attr_type) => {
+    |                                                   ^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_attr_type`
+
+warning: unused variable: `competition`
+   --> src\ui\console_ui.rs:562:35
+    |
+562 |     fn get_team_name_by_id(&self, competition: &Competition, team_id: Uuid) -> String {
+    |                                   ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_competition`
+
+warning: variant `All` is never constructed
+   --> src\systems\development_system.rs:490:5
+    |
+486 | enum GrowthCategory {
+    |      -------------- variant in this enum
+...
+490 |     All,
+    |     ^^^
+    |
+    = note: `GrowthCategory` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: trait `SquadRoleExt` is never used
+   --> src\systems\morale_system.rs:206:7
+    |
+206 | trait SquadRoleExt {
+    |       ^^^^^^^^^^^^
+
+warning: field `position` is never read
+   --> src\systems\match_system.rs:933:5
+    |
+931 | struct PlayerInMatchRef<'a> {
+    |        ---------------- field in this struct
+932 |     player: &'a Player,
+933 |     position: Position,
+    |     ^^^^^^^^
+    |
+    = note: `PlayerInMatchRef` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+
+warning: field `event_engine` is never read
+  --> src\ui\console_ui.rs:15:5
+   |
+13 | pub struct ConsoleUI {
+   |            --------- field in this struct
+14 |     time_engine: TimeEngine,
+15 |     event_engine: EventEngine,
+   |     ^^^^^^^^^^^^
+
+   Compiling player-manager v0.1.0 (D:\Adminstrator\Documents\PM\player-manager\player-manager)
+warning: `player-manager` (lib) generated 51 warnings (run `cargo fix --lib -p player-manager` to apply 46 suggestions)
+warning: unused imports: `Fixture`, `MatchResult`, `MatchStatus`, `Match`, `Standing`, `TacticalStyle`, and `Tactics`
+ --> src\main.rs:2:19
+  |
+2 |     Player, Team, Match, Competition, Position, Foot, CareerStats, Contract, 
+  |                   ^^^^^
+3 |     SquadRole, HiddenAttributes, Tactics, TacticalStyle, Finances, Facilities, 
+  |                                  ^^^^^^^  ^^^^^^^^^^^^^
+4 |     CurrentSeason, Fixture, Standing, MatchStatus, MatchResult
+  |                    ^^^^^^^  ^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `game_state::SeasonInfo`
+ --> src\main.rs:6:76
+  |
+6 | use player_manager::core::{TimeEngine, EventEngine, game_state::GameState, game_state::SeasonInfo};
+  |                                                                            ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `CompetitionEngine`, `MatchEngine`, `MoraleEngine`, `PlayerDevelopmentEngine`, `ReputationEngine`, `SocialEngine`, `TrainingSystem`, and `TransferEngine`
+ --> src\main.rs:8:5
+  |
+8 |     PlayerDevelopmentEngine, MoraleEngine, MatchEngine, ReputationEngine, 
+  |     ^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^^^^^^
+9 |     SocialEngine, TrainingSystem, CompetitionEngine, TransferEngine
+  |     ^^^^^^^^^^^^  ^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^
+
+warning: unused import: `player_manager::save::SaveManager`
+  --> src\main.rs:12:5
+   |
+12 | use player_manager::save::SaveManager;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: variable does not need to be mutable
+  --> src\main.rs:28:9
+   |
+28 |     let mut game_state = GameState::new(player, Uuid::new_v4());
+   |         ----^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused imports: `Fixture`, `MatchResult`, and `Standing`
+ --> tests\integration_tests.rs:4:47
+  |
+4 |     SquadRole, HiddenAttributes, MatchStatus, MatchResult, MatchLineup, 
+  |                                               ^^^^^^^^^^^
+5 |     Formation, Tactics, TacticalStyle, Finances, Facilities, CurrentSeason,
+6 |     Fixture, Standing
+  |     ^^^^^^^  ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0063]: missing field `tutorial_state` in initializer of `Player`
+   --> tests\integration_tests.rs:294:5
+    |
+294 |     Player {
+    |     ^^^^^^ missing `tutorial_state`
+
+warning: variable does not need to be mutable
+  --> tests\integration_tests.rs:24:9
+   |
+24 |     let mut time_engine = TimeEngine::new(chrono::Utc::now());
+   |         ----^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+  --> tests\integration_tests.rs:25:9
+   |
+25 |     let mut event_engine = EventEngine::new();
+   |         ----^^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: variable does not need to be mutable
+  --> tests\integration_tests.rs:28:9
+   |
+28 |     let mut match_engine = MatchEngine::new();
+   |         ----^^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `time_engine`
+  --> tests\integration_tests.rs:24:9
+   |
+24 |     let mut time_engine = TimeEngine::new(chrono::Utc::now());
+   |         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_time_engine`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `event_engine`
+  --> tests\integration_tests.rs:25:9
+   |
+25 |     let mut event_engine = EventEngine::new();
+   |         ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_event_engine`
+
+warning: unused variable: `match_engine`
+  --> tests\integration_tests.rs:28:9
+   |
+28 |     let mut match_engine = MatchEngine::new();
+   |         ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_match_engine`
+
+warning: unused variable: `social_engine`
+  --> tests\integration_tests.rs:30:9
+   |
+30 |     let social_engine = SocialEngine::new();
+   |         ^^^^^^^^^^^^^
+   |
+help: you might have meant to pattern match on the similarly named struct `SocialEngine`
+   |
+30 -     let social_engine = SocialEngine::new();
+30 +     let player_manager::SocialEngine = SocialEngine::new();
+   |
+help: if this is intentional, prefix it with an underscore
+   |
+30 |     let _social_engine = SocialEngine::new();
+   |         +
+
+warning: unused variable: `competition_engine`
+  --> tests\integration_tests.rs:32:9
+   |
+32 |     let competition_engine = CompetitionEngine::new();
+   |         ^^^^^^^^^^^^^^^^^^
+   |
+help: you might have meant to pattern match on the similarly named struct `CompetitionEngine`
+   |
+32 -     let competition_engine = CompetitionEngine::new();
+32 +     let player_manager::CompetitionEngine = CompetitionEngine::new();
+   |
+help: if this is intentional, prefix it with an underscore
+   |
+32 |     let _competition_engine = CompetitionEngine::new();
+   |         +
+
+warning: unused variable: `transfer_engine`
+  --> tests\integration_tests.rs:33:9
+   |
+33 |     let transfer_engine = TransferEngine::new();
+   |         ^^^^^^^^^^^^^^^
+   |
+help: you might have meant to pattern match on the similarly named struct `TransferEngine`
+   |
+33 -     let transfer_engine = TransferEngine::new();
+33 +     let player_manager::TransferEngine = TransferEngine::new();
+   |
+help: if this is intentional, prefix it with an underscore
+   |
+33 |     let _transfer_engine = TransferEngine::new();
+   |         +
+
+warning: variable does not need to be mutable
+   --> tests\integration_tests.rs:111:9
+    |
+111 |     let mut player = create_test_player();
+    |         ----^^^^^^
+    |         |
+    |         help: remove this `mut`
+
+warning: unused variable: `interest`
+   --> tests\integration_tests.rs:173:17
+    |
+173 |     if let Some(interest) = interests.first() {
+    |                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_interest`
+
+warning: variable does not need to be mutable
+   --> tests\integration_tests.rs:205:9
+    |
+205 |     let mut player = create_test_player();
+    |         ----^^^^^^
+    |         |
+    |         help: remove this `mut`
+
+warning: unused variable: `player`
+   --> tests\integration_tests.rs:205:9
+    |
+205 |     let mut player = create_test_player();
+    |         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_player`
+
+warning: variable does not need to be mutable
+   --> tests\integration_tests.rs:235:9
+    |
+235 |     let mut event_engine = EventEngine::new();
+    |         ----^^^^^^^^^^^^
+    |         |
+    |         help: remove this `mut`
+
+warning: unused variable: `event_engine`
+   --> tests\integration_tests.rs:235:9
+    |
+235 |     let mut event_engine = EventEngine::new();
+    |         ^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_event_engine`
+
+warning: unused variable: `dribbling_increase_young`
+   --> tests\integration_tests.rs:285:9
+    |
+285 |     let dribbling_increase_young = player.technical.dribbling as i32 - initial_dribbling as i32;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_dribbling_increase_young`
+
+warning: unused variable: `dribbling_increase_older`
+   --> tests\integration_tests.rs:286:9
+    |
+286 |     let dribbling_increase_older = player.technical.dribbling as i32 - initial_dribbling_at_28 as i32;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_dribbling_increase_older`
+
+For more information about this error, try `rustc --explain E0063`.
+warning: `player-manager` (test "integration_tests") generated 18 warnings
+error: could not compile `player-manager` (test "integration_tests") due to 1 previous error; 18 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+warning: `player-manager` (bin "player-manager" test) generated 5 warnings (run `cargo fix --bin "player-manager" -p player-manager --tests` to apply 5 suggestions)
+warning: unused imports: `CareerStats`, `Contract`, `Foot`, `Player`, `Position`, and `SquadRole`
+   --> src\systems\development_system.rs:497:27
+    |
+497 |     use crate::entities::{Player, Position, Foot, CareerStats, Contract, SquadRole, HiddenAttributes};
+    |                           ^^^^^^  ^^^^^^^^  ^^^^  ^^^^^^^^^^^  ^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `chrono::NaiveDate`
+   --> src\systems\development_system.rs:498:9
+    |
+498 |     use chrono::NaiveDate;
+    |         ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `CareerStats`, `Contract`, `Foot`, `HiddenAttributes`, `Player`, `Position`, and `SquadRole`
+   --> src\systems\reputation_system.rs:355:27
+    |
+355 |     use crate::entities::{Player, Position, Foot, CareerStats, Contract, SquadRole, HiddenAttributes};
+    |                           ^^^^^^  ^^^^^^^^  ^^^^  ^^^^^^^^^^^  ^^^^^^^^  ^^^^^^^^^  ^^^^^^^^^^^^^^^^
+
+warning: unused import: `chrono::NaiveDate`
+   --> src\systems\reputation_system.rs:356:9
+    |
+356 |     use chrono::NaiveDate;
+    |         ^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `CareerStats`, `Contract`, `Foot`, `Player`, `Position`, and `SquadRole`
+   --> src\systems\training_system.rs:511:27
+    |
+511 |     use crate::entities::{Player, Position, Foot, CareerStats, Contract, SquadRole, HiddenAttributes};
+    |                           ^^^^^^  ^^^^^^^^  ^^^^  ^^^^^^^^^^^  ^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `chrono::NaiveDate`
+   --> src\systems\training_system.rs:512:9
+    |
+512 |     use chrono::NaiveDate;
+    |         ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::core::game_state::SeasonInfo`
+   --> src\systems\competition_system.rs:293:9
+    |
+293 |     use crate::core::game_state::SeasonInfo;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::systems::social_system::ManagerProfile`
+   --> src\systems\competition_system.rs:294:9
+    |
+294 |     use crate::systems::social_system::ManagerProfile;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::systems::social_system::ManagerProfile`
+   --> src\systems\transfer_system.rs:449:9
+    |
+449 |     use crate::systems::social_system::ManagerProfile;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::systems::social_system::ManagerProfile`
+   --> src\ui\console_ui.rs:640:9
+    |
+640 |     use crate::systems::social_system::ManagerProfile;
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Competition`, `Match`, and `Team`
+ --> src\save\save_manager.rs:8:31
+  |
+8 | use crate::entities::{Player, Team, Competition, Match};
+  |                               ^^^^  ^^^^^^^^^^^  ^^^^^
+
+warning: `player-manager` (bin "player-manager") generated 5 warnings (5 duplicates)
+error[E0063]: missing field `tutorial_state` in initializer of `entities::Player`
+   --> src\systems\competition_system.rs:516:22
+    |
+516 |         let player = crate::entities::Player {
+    |                      ^^^^^^^^^^^^^^^^^^^^^^^ missing `tutorial_state`
+
+warning: use of deprecated associated function `chrono::Utc::today`: use `Utc::now()` instead, potentially with `.date_naive()`
+   --> src\systems\transfer_system.rs:479:34
+    |
+479 |         let today = chrono::Utc::today().naive_utc();
+    |                                  ^^^^^
+
+error[E0063]: missing field `tutorial_state` in initializer of `entities::Player`
+   --> src\systems\transfer_system.rs:512:9
+    |
+512 |         Player {
+    |         ^^^^^^ missing `tutorial_state`
+
+error[E0063]: missing field `tutorial_state` in initializer of `entities::Player`
+   --> src\save\save_manager.rs:334:9
+    |
+334 |         Player {
+    |         ^^^^^^ missing `tutorial_state`
+
+warning: `player-manager` (lib test) generated 55 warnings (43 duplicates)
+error: could not compile `player-manager` (lib test) due to 3 previous errors; 55 warnings emitted

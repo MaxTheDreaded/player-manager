@@ -1,0 +1,14 @@
+D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\deps\serde-f28a1e0e582bb4bd.d: C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\build\serde-58b03c632c37d43c\out/private.rs
+
+D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\deps\libserde-f28a1e0e582bb4bd.rlib: C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\build\serde-58b03c632c37d43c\out/private.rs
+
+D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\deps\libserde-f28a1e0e582bb4bd.rmeta: C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\build\serde-58b03c632c37d43c\out/private.rs
+
+C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\HTAdmin\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+D:\Adminstrator\Documents\PM\player-manager\player-manager\target\debug\build\serde-58b03c632c37d43c\out/private.rs:
+
+# env-dep:OUT_DIR=D:\\Adminstrator\\Documents\\PM\\player-manager\\player-manager\\target\\debug\\build\\serde-58b03c632c37d43c\\out
